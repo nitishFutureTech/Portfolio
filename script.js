@@ -81,3 +81,27 @@ boxes.forEach(function(box){
     });
 
 });
+
+
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Apna WhatsApp Number yaha dale (Country code ke saath, bina + sign ke)
+    const phoneNumber = "7080502006"; 
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // WhatsApp Message Format
+    const text = `*New Inquiry*%0A%0A` +
+                 `*Name:* ${name}%0A` +
+                 `*Email:* ${email}%0A` +
+                 `*Message:* ${message}`;
+
+    // WhatsApp URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+
+    // Nayi window mein open karein
+    window.open(whatsappURL, '_blank');
+});
