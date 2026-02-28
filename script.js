@@ -105,3 +105,5 @@ document.getElementById('whatsappForm').addEventListener('submit', function(e) {
     // Nayi window mein open karein
     window.open(whatsappURL, '_blank');
 });
+
+
