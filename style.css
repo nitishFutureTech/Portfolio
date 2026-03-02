@@ -143,6 +143,10 @@ body {
   .toggle {
     display: block;
   }
+
+  .cursor{
+    display: none;
+  }
 }
 
 /* ================= HERO SECTION ================= */
@@ -362,6 +366,8 @@ body {
     width: 100%;
     max-width: 250px;
     margin: auto;
+    display: block;
+    margin-bottom: 15px;
   }
 
   .btn .view {
