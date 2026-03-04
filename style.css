@@ -294,9 +294,13 @@ body {
 
 /* Buttons */
 .btn {
-    margin-top: 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
 
 .btn .view {
   text-decoration: none;
@@ -345,39 +349,38 @@ body {
 
 /* Mobile */
 @media (max-width: 600px) {
+
   .hero-section {
-    padding: 0px 15px 10px;
-    margin-top: -90px;
-    margin-bottom: 50px;
+    padding: 100px 20px 60px;
+    margin-top: -100px;
   }
 
-  .hero-section .full {
-    font-size: 14px;
-    letter-spacing: 2px;
+  .container {
+    margin-top: 30px;
   }
 
   .btn {
-    flex-direction: row;
-    gap: 12px;
-    margin-top: 40px;
-  }
-
-  .btn button {
+    flex-direction: column;
+    gap: 15px;
     width: 100%;
-    max-width: 250px;
-    margin: auto;
-    display: block;
-    margin-bottom: 15px;
   }
 
-  .btn .view {
-    margin-right: 20px;
-    
+  .hero-section .icon-logo {
+    position: relative;
+    left: 1px;
+    margin-top: 20px;
+  }
+
+  .btn .view,
+  .btn .contact {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    margin: 0;
   }
 
   .hero-section h1 {
     font-size: 35px;
-    line-height: 1.2;
   }
 
   .hero-section p {
